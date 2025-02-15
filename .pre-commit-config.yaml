@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 23.12.1  # Use the latest stable release
+    hooks:
+      - id: black
+        language_version: python3  # Ensures Black runs in a Python 3 environment
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.1.15  # Use the latest stable release
+    hooks:
+      - id: ruff
+        args: [--fix]  # Auto-fix linting issues when possible
